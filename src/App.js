@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRoute as Router,Switcher,Route}  from  'react-router-dom';
+import {BrowserRouter as Router,Switch,Route}  from  'react-router-dom';
 // pages
 import About from "./pages/About";
 import Cart from "./pages/Cart";
@@ -9,9 +9,12 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDetails";
+//component
+import Header from './components/Header'
 export default function App() {
   return(
     <Router>
+      <Header />
     <Switch>
       <Route exact path="/">
         <Home />
