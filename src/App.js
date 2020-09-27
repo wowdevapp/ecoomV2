@@ -12,6 +12,7 @@ import ProductDetails from "./pages/ProductDetails";
 //component
 import Header from './components/Header'
 export default function App() {
+  console.log(React.version);
   return(
     <Router>
       <Header />
